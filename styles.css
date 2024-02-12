@@ -1,0 +1,175 @@
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    position: relative; 
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #4e334c;
+    text-align: center;
+}
+
+.imagem img {
+    width: 150px;
+    height: 150px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.texto {
+    flex: 1;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sobre_mim {
+    background-color: #788475;
+}
+
+.experiencia {
+    background-color: #5E5D5C;
+}
+
+.contato {
+    background-color: #453643;
+}
+
+.link {
+    display: inline-block;
+    background-color: #28534c;
+    color: #e8e8e8;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background-color: #31795b;
+}
+
+.imagem_logo img {
+    height: 1.6em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-color: transparent
+}
+
+.projetos {
+    background-color: #28112B;
+}
+
+h2 {
+    color: #fff;
+}
+
+body,
+.sidebar ul li a,
+.texto,
+.section,
+h2,
+p,
+a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff; 
+}
+
+.section h2{
+    font-size: 26px;
+
+}
+
+.section p {
+    font-size: 20px; 
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 15vh; 
+        background-color: #4e334c; 
+        text-align: center;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+    }
+
+    .imagem img {
+        width: auto;
+        height: 14vh;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 3px; 
+        background-color: #4e334c; 
+    }
+
+    .sidebar ul li {
+        padding: 10px;
+        background-color: #4e334c; 
+    }
+
+    .sidebar ul li a {
+        color: #fff; 
+        font-size: 18px; 
+        text-decoration: none;
+    }
+
+    .texto {
+        padding: 10px 20px; 
+        margin-top: 10px; 
+        text-align: center; 
+        background-color: #ffffff; 
+        color: #000000; 
+    }
+
+    .section {
+        margin-bottom: 15px;
+    }
+
+}
